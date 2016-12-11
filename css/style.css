@@ -27,10 +27,17 @@ body {
 
 .jumbotron {
   position: absolute;
-  top: 65%;
+  top: 62%;
   left:50%;
   transform: translate(-50%,-50%);
-  opacity: 0.5; 
+  opacity: 0.8; 
+}
+
+.redText {
+    color:red;
+}
+.blueText {
+    color:blue;
 }
 
 .topnav {
@@ -73,6 +80,13 @@ body {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+
+@media (min-width:700px) {
+    .container {
+        width: 55%;
+    }
+}
+
 @media(max-width:767px) {
     .intro-message {
         padding-bottom: 15%;
@@ -106,15 +120,38 @@ body {
 
 .content-section-a {
     padding: 50px 0;
+    margin-top: 770px;
+    bottom: 0;
     background-color: #f8f8f8;
+    text-align: left;
+    padding-left: 100px;
 }
 
 .content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
+    position: relative;
+    width: 550px;
+    height: 180px;
+    background: red;
+    margin-bottom: 100px;
 }
 
+@media only screen and (min-width: 800px) and (max-width: 1024px) {
+    .content-section-a {
+        padding-left: 200px;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+    .content-section-a {
+        padding-left: 45px;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+    .content-section-a {
+        padding-left: 0px;
+    }
+}
 .section-heading {
     margin-bottom: 30px;
 }
@@ -126,10 +163,12 @@ body {
 }
 
 .banner {
-    padding: 100px 0;
+    position: relative;
+    padding-top: 0px;
     color: #f8f8f8;
-    background: url(../img/bluehouse.jpg) no-repeat center center;
+    background: red;
     background-size: cover;
+    text-align: center;
 }
 
 .banner h2 {
@@ -142,9 +181,31 @@ body {
     margin-bottom: 0;
 }
 
-.banner-social-buttons {
-    float: right;
-    margin-top: 0;
+.adbanner {
+    background: red;
+    color: white;
+    width: 500px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+.promisebanner {
+    background: blue;
+    color: white;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 20px;
+}
+
+.btn {
+    background: red;
+    color: white;
+}
+
+footer {
+    padding-bottom: 0px;
 }
 
 @media(max-width:1199px) {
