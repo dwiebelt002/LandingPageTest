@@ -47,6 +47,7 @@ body {
 .lead {
     font-size: 18px;
     font-weight: 400;
+
 }
 
 .intro-header {
@@ -135,21 +136,35 @@ body {
     margin-bottom: 100px;
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1024px) {
+@media only screen and (min-width: 800px) and (max-width: 1270px) {
     .content-section-a {
         padding-left: 200px;
+         margin-top: 750px;
+    }
+    .jumbotron {
+        top: 65%;
     }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
     .content-section-a {
         padding-left: 45px;
+        margin-top: 700px;
+
+    }
+    .jumbotron {
+        top: 70%;
     }
 }
 
 @media only screen and (min-width: 200px) and (max-width: 600px) {
     .content-section-a {
         padding-left: 0px;
+        margin-top: 700px;
+
+    }
+    .jumbotron {
+        top: 65%;
     }
 }
 .section-heading {
@@ -234,8 +249,10 @@ footer {
 }
 
 footer {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+    padding: 25px 0;
+    background-color: red;
+    color: white;
+    margin-top: 2px;
 }
 
 p.copyright {
