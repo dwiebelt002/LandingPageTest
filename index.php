@@ -16,9 +16,7 @@ $message = 'Thank you for choosing Professional Painters! You are our number 1 c
 
 $header = $email;
 
-if ($_POST){
 mail($to, $subject, $email, $message, "From:".$from);
-echo "<script type='text/javascript'>alert('Your email has been sent! Thank you!);</script";
-}
+
 
 ?>
