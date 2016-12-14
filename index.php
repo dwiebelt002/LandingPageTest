@@ -17,3 +17,5 @@ $header = $email;
 if ($_POST){
 mail($to, $subject, $email, $message)
 };
+
+?>
