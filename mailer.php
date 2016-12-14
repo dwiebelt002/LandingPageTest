@@ -21,7 +21,7 @@ if(isset($_POST['name'],$_POST['email'],$_POST['message'])){
         $m->SMTPAuth=true;
         $m->Host='smtp.gmail.com';
         $m->Username='devinwiebelt@gmail.com';//replace by your email address
-        $m->Password='SephiRoth@1988';//replace with your password
+        $m->Password='password';//replace with your password
         $m->SMTPSecure='ssl';
         $m->Port=465;
 

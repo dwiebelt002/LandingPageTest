@@ -112,7 +112,7 @@ $fields = isset($_SESSION['fields']) ? $_SESSION['fields'] : [];
                           
                           <div class="form-group">
                             <label for="name">Name:</label>
-                            <input type="text" class="form-control" name="name" id="name"><?php echo isset ($fields['name'])? 'value="'.e($fields['name']).'"':''?>>
+                            <input type="text" class="form-control" name="name" id="name"><?php echo isset ($fields['name'])? 'value="'.e($fields['name']).'"':''?>
                           </div>
                 </form>
                 <br>
