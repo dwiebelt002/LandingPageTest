@@ -35,7 +35,7 @@ if(isset($_POST['name'],$_POST['email'],$_POST['message'])){
             header('Location:thanks.php');
             die();
         }else{
-            $errors[]="Sorry ,Could not send email.Try again later.";
+            $errors[]="Sorry! Could not send email. Try again later.";
         }
     }
 }else{
