@@ -1,6 +1,6 @@
 <?php include_once('index.html');
 
-$from="devinwiebelt@gmail.com";
+$from="noreplay@professionalpainters.com";
 $email= $_POST['email'];
 $subject=$_POST['Your $150 Promo Code!'];
 $message=$_POST['Thank you for choosing Professional Painters!'];
