@@ -1,12 +1,13 @@
 <?php include_once('index.html');
 
-$to = 'devinwiebelt@gmail.com';
-$to = $_POST['email'];
+$from='devinwiebelt@gmail.com';
+// $to = 'devinwiebelt@gmail.com';
+// $to = $_POST['email'];
 
 $subject = 'Your $150 Promo is Here!';
 
 $name = $_POST['name'];
-$email= 'noreply@professionalpainters.com';
+$email= $_POST['email'];
 $phone = $_POST['phone'];
 
 $message = 'Thank you for choosing Professional Painters! You are our number 1 customer!';
@@ -14,7 +15,7 @@ $message = 'Thank you for choosing Professional Painters! You are our number 1 c
 $header = $email;
 
 if ($_POST){
-mail($to, $subject, $email, $message);
+mail($to, $subject, $email, $message, "From:".$from);
 echo "<script type='text/javascript'>alert('Your email has been sent! Thank you!);</script";
 }
 
