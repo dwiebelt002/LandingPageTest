@@ -15,7 +15,7 @@ $header = $email;
 
 if ($_POST){
 mail($to, $subject, $email, $message);
-alert = ("Your email has been sent! Thank you!");
+echo "<script type='text/javascript'>alert('Your email has been sent! Thank you!);</script";
 }
 
 ?>
