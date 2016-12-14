@@ -1,4 +1,4 @@
-<?php include_once('index.html');
+<?php include_once('index.html');?>
 
 // //recipient
 // $to = 'devinwiebelt@gmail.com';
@@ -15,7 +15,7 @@
 // $header = $email;
 
 // if ($_POST){
-// mail($to, $subject, $email, $message)
-// };
+// mail($to, $subject, $email, $message);
+// }
 
-?>
+// ?>
