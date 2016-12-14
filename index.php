@@ -1,4 +1,4 @@
-<?php
+<?php include_once('index.html');
 
 $from='devinwiebelt@gmail.com';
 // $to = 'devinwiebelt@gmail.com';
