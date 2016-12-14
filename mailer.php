@@ -2,6 +2,9 @@
 require 'PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
+$name = $_POST['name'];
+$email= $_POST['email'];
+$phone = $_POST['phone'];
 
 //$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
@@ -14,7 +17,7 @@ $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, 
 $mail->Port = 587;                                    // TCP port to connect to
 
 $mail->setFrom('from@example.com', 'Mailer');
-$mail->addAddress('devinwiebelt@gmail.com', 'Joe User');     // Add a recipient
+$mail->addAddress($email, $name);     // Add a recipient
 $mail->addAddress('ellen@example.com');               // Name is optional
 $mail->addReplyTo('info@example.com', 'Information');
 $mail->addCC('cc@example.com');
@@ -34,3 +37,5 @@ if(!$mail->send()) {
 } else {
     echo 'Message has been sent';
 }
+
+?>
