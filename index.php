@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+$errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];
+$fields = isset($_SESSION['fields']) ? $_SESSION['fields'] : [];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,15 +100,19 @@
                 </div>
             </div>
 
+            <?php if(!empty($errors)): ?>
             <div class="panel">
-            //errors will go here
+                <ul>
+                    <li><?php echo implode('</li><li>', $errors) ?></li>
+                </ul>
             </div>
+        <?php endif; ?>
 <br>
                 <form class="form-inline" action="mailer.php" method="POST">
                           
                           <div class="form-group">
                             <label for="name">Name:</label>
-                            <input type="text" class="form-control" name="name" id="name">
+                            <input type="text" class="form-control" name="name" id="name"><?php echo isset ($fields['name'])? 'value="'.e($fields['name']).'"':''?>>
                           </div>
                 </form>
                 <br>
@@ -108,14 +120,14 @@
 
                           <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="text" name="email" class="form-control" id="email">
+                            <input type="text" name="email" class="form-control" id="email"><?php echo isset ($fields['email'])? 'value="'.e($fields['email']).'"':''?>
                           </div>
                 </form>
                 <br>
                 <form class="form-inline" action="mailer.php" method="POST">
                           <div class="form-group">
                             <label for="phone">Phone:</label>
-                            <input type="phone" class="form-control" name="phone" id="phone">
+                            <input type="phone" class="form-control" name="phone" id="phone"><?php echo isset ($fields['phone'])? e($fields['phone']):''?>
                           </div>
                   <br><br>       
                           <button type="submit" name="submit" value="submit" method="POST" id="submit" class="btn btn-default"><strong>Save $150</strong></button>
@@ -178,3 +190,8 @@
 </body>
 
 </html>
+
+<?php
+unset($_SESSION['errors']);
+
+?>
