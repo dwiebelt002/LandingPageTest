@@ -114,7 +114,7 @@
                             <input type="phone" class="form-control" id="phone">
                           </div>
                  </form> <br>       
-                          <button type="submit" name="submit" value="submit" id="myButton" class="btn btn-default"><strong>Save $150</strong></button>
+                          <button type="submit" name="submit" value="submit" method="POST" id="submit" class="btn btn-default"> <a href="entry.html"><strong>Save $150</strong></button>
                        
 <br>
 <br>
@@ -169,29 +169,6 @@
 <footer>
     <h4>SCHEDULE YOUR FREE ESTIMATE! CALL 555-123-4567</h4>
 </footer>
-<!-- 
-<script type="text/javascript">
-    $(document).ready(function() {
-
-        $('#myButton').click(function(){
-            var name = $('#name').val();
-            var email = $('#email').val();
-
-            var varData = 'name' + name + '&email' + email;
-            console.log(varData);
-
-            $.ajax({
-                type:"POST",
-                url:'php.php',
-                data: varData,
-                success: function() {
-                    alert ("it was a success!");
-                }
-            })
-        });
-    });
-    
-</script> -->
 
 </body>
 
