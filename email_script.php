@@ -1,4 +1,4 @@
-<?php
+<?php include_once('index.html');
 
 $from="noreplay@professionalpainters.com";
 $email= $_POST['email'];
