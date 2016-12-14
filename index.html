@@ -1,3 +1,32 @@
+<?php include_once('index.html');
+
+$from='devinwiebelt@gmail.com';
+// $to = 'devinwiebelt@gmail.com';
+// $to = $_POST['email'];
+
+$subject = 'Your $150 Promo is Here!';
+
+$name = $_POST['name'];
+$email= $_POST['email'];
+$phone = $_POST['phone'];
+
+$to = $email;
+
+$message = 'Thank you for choosing Professional Painters! You are our number 1 customer!';
+
+$header = $email;
+
+if ($_POST){
+mail($to, $subject, $email, $message, "From:".$from);
+echo "<script type='text/javascript'>alert('Your email has been sent! Thank you!);</script";
+}
+
+?>
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,7 +121,7 @@
                 </div>
             </div>
 <br>
-                <form class="form-inline" action="index.php" method="POST">
+                <form class="form-inline" action="?" method="POST">
                           
                           <div class="form-group">
                             <label for="name">Name:</label>
@@ -100,7 +129,7 @@
                           </div>
                 </form>
                 <br>
-                <form class="form-inline" action="index.php" method="POST">
+                <form class="form-inline" action="?" method="POST">
 
                           <div class="form-group">
                             <label for="email">Email:</label>
@@ -108,7 +137,7 @@
                           </div>
                 </form>
                 <br>
-                <form class="form-inline" action="index.php" method="POST">
+                <form class="form-inline" action="?" method="POST">
                           <div class="form-group">
                             <label for="phone">Phone:</label>
                             <input type="phone" class="form-control" name="phone" id="phone">
