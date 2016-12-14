@@ -1,5 +1,5 @@
 <?php include_once('index.html');
-require 'PHPMailerAutoload.php';
+require '/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
 $name = $_POST['name'];
