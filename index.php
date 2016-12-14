@@ -10,6 +10,8 @@ $name = $_POST['name'];
 $email= $_POST['email'];
 $phone = $_POST['phone'];
 
+$to = $email;
+
 $message = 'Thank you for choosing Professional Painters! You are our number 1 customer!';
 
 $header = $email;
