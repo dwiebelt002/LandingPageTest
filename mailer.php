@@ -20,7 +20,7 @@ if(isset($_POST['name'],$_POST['email'],$_POST['message'])){
         $m->isSMTP();
         $m->SMTPAuth=true;
         $m->Host='smtp.gmail.com';
-        $m->Username='devinwiebelt@gmail.com';//replace by your email address
+        $m->Username='user@gmail.com';//replace by your email address
         $m->Password='password';//replace with your password
         $m->SMTPSecure='ssl';
         $m->Port=465;
@@ -30,7 +30,7 @@ if(isset($_POST['name'],$_POST['email'],$_POST['message'])){
         $m->Body='From:'.$fields['name'].'('.$fields['email'].')<p>"Thank you for using Professional Painters. You are our number one customer!"</p>';
 
         $m->FromName='Contact';
-        $m->AddAddress('someone@gmail.com','Some one');
+        $m->AddAddress('user@gmail.com','Jon Snow');
         if ($m->send()) {
             header('Location:thanks.php');
             die();

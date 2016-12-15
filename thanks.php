@@ -8,6 +8,6 @@
         <title>Thanks</title>
     </head>
     <body>
-        Thanks, we have your message!
+        We have sent you an email confirmation regarding out promotion! Thank you for choosing Professional Painters! 
     </body>
 </html>

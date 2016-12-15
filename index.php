@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+require_once'helpers/security.php';
 $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];
 $fields = isset($_SESSION['fields']) ? $_SESSION['fields'] : [];
 ?>
